@@ -13,4 +13,13 @@ Using both of those, I toyed with classes and made a working program that create
 ### August 20th, 2021
 Back at it with the Python after a long summer.
 I want to finish up my DnD project to solidify the basics of Classes.
-Then I want to start taking the Coursera course on Climate Change Data Analysis, which is meant as an intro level coding and data sci course. Ultimately I want to start building a data science portfolio. Doing this alongside my over-full-time schedule of earning a teaching MA and working at the school AND catching up on my Earth Science will be difficult, but I think that by making my Python projects focused on earth science, I can create some synergy that ultimately saves time by making studying more enjoyable.
+
+To review, classes essentially create a blueprint for new objects. the init method grabs a variable and makes an instance out of by assigning it defined attributes.
+
+The program I want to make will do the following:
+1-Ask the user for their character's name
+2-Roll a simulated die to determine that character's attribute values
+3-Put that character and its name and data into a list
+4-When the user has no more names to add, display the full list of characters and their attributes after all chars have been created.
+
+I was able to complete all four goals! The file is cards.py.
