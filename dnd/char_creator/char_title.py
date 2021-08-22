@@ -1,25 +1,31 @@
-class player:
+class Player:
     def __init__(self, name, race):
+        print('Inside Player constructor')
         self.name = name
         self.race = race
-        self.ord = ord
 
     def __str__(self):
+        print('Inside Player Print Representation')
         return 'name=' + self.name+ ' race= ' + self.race
 
-char_list = []
+    def cast_spell(self, name):
+        print('prepare to cast...', self, name)
+        return 'casting' + name + '!'
+
+player_list = []
 
 while(True):
 
     name = input("what is your character's name?: ")
     race = input("What is your character's race?: ")
+    player = Player(name, race)
+    player_list.append(player)
 
-    char_list.append(player(name, race))
-
+    print(player.cast_spell('fireball'))
     option = int(input("press 0 if you want to add another character:"))
 
     if(option):
         break
 
-for i in char_list:
-    print('>', i)
+for player in player_list:
+    print('>', player)
